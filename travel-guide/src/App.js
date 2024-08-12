@@ -1,25 +1,117 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import "./App.css";
+import Home from "./components/home";
+import Explore from "./components/Explore";
+import Search from "./components/Search";
+import Profile from "./components/Profile";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Router>
+      <div
+        style={{ height: "100vh", display: "flex", flexDirection: "column" }}
+      >
+        <div style={{ flex: 1, overflow: "auto" }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/explore" element={<Explore />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="/profile" element={<Profile />} />
+          </Routes>
+        </div>
+        <nav
+          style={{
+            position: "fixed",
+            bottom: "20px", // A few cm above the bottom
+            width: "90%",
+            left: "50%",
+            transform: "translateX(-50%)",
+            display: "flex",
+            justifyContent: "space-around",
+            alignItems: "center",
+            boxShadow: "0px -2px 10px rgba(0, 0, 0, 0.1)",
+            padding: "15px 0",
+            borderRadius: "35px",
+            backgroundColor: "#FFFBEB", // Starlight color
+            zIndex: 1000,
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Link to="/" style={{ textAlign: "center", color: "#28343B" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <img
+                src="./icons/Home.tsx"
+                alt="Home"
+                style={{ width: "30px", height: "30px" }}
+              />
+              <span style={{ fontFamily: "Bebas Neue", fontSize: "14px" }}>
+                HOME
+              </span>
+            </div>
+          </Link>
+          <Link to="/explore" style={{ textAlign: "center", color: "#C74B31" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <img
+                src="./icons/explore.svg"
+                alt="Explore"
+                style={{ width: "30px", height: "30px" }}
+              />
+              <span style={{ fontFamily: "Bebas Neue", fontSize: "14px" }}>
+                EXPLORE
+              </span>
+            </div>
+          </Link>
+          <Link to="/search" style={{ textAlign: "center", color: "#28343B" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <img
+                src="./icons/search.svg"
+                alt="Search"
+                style={{ width: "30px", height: "30px" }}
+              />
+              <span style={{ fontFamily: "Bebas Neue", fontSize: "14px" }}>
+                SEARCH
+              </span>
+            </div>
+          </Link>
+          <Link to="/profile" style={{ textAlign: "center", color: "#28343B" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <img
+                src="./icons/profile.svg"
+                alt="My Account"
+                style={{ width: "30px", height: "30px" }}
+              />
+              <span style={{ fontFamily: "Bebas Neue", fontSize: "14px" }}>
+                MY ACCOUNT
+              </span>
+            </div>
+          </Link>
+        </nav>
+      </div>
+    </Router>
   );
 }
-
 export default App;

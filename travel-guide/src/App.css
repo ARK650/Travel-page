@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: "Abel", sans-serif; /* Body text */
+  background-color: var(--starlight); /* Light background */
+  line-height: 1.6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --ttc-red: #af0106;
+  --terracotta: #c74b31;
+  --skyline: #28343b;
+  --starlight: #fffbeb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Bebas Neue", sans-serif; /* Headings */
+  margin-bottom: 0.5em;
+
+  letter-spacing: 1px; /* Adds a bit of spacing between the letters */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h3 {
+  font-family: "Bebas Neue", sans-serif;
   color: white;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  font-family: "Abel", sans-serif;
+  font-size: 16px;
+  color: var(--terracotta);
+  margin-bottom: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: var(--starlight);
+}
+
+nav a div {
+  font-size: 14px;
+  padding: 5px;
+  color: var(--skyline);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+nav a {
+  color: var(--starlight);
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--ttc-red);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+#mapContainer {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
