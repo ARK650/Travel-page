@@ -1,0 +1,55 @@
+.account-container {
+  padding: 20px;
+}
+
+.account-header h1 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  color: #af0106;
+  margin-bottom: 20px;
+}
+
+.account-profile {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #28343b;
+}
+
+.account-options {
+  font-family: "Abel", sans-serif;
+  color: #28343b;
+}
+
+.settings-section,
+.payment-rewards-section,
+.information-section {
+  margin-bottom: 20px;
+}
+
+.settings-section h2,
+.payment-rewards-section h2,
+.information-section h2 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #af0106;
+  margin-bottom: 10px;
+}
+
+.settings-section ul,
+.payment-rewards-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.settings-section li,
+.payment-rewards-section li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}

@@ -1,15 +1,15 @@
 import React from "react";
 import "./Home.css"; // We'll add this CSS file for styling
-
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="home-container">
       <header className="header">
         <div className="menu-icon">&#9776;</div>
         <h1 className="header-title">HOME</h1>
-        <a href="/login" className="login-link">
+        <Link to="/login" className="login-link">
           Login/Sign Up
-        </a>
+        </Link>
       </header>
 
       <section className="featured-section">

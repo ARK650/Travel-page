@@ -1,0 +1,89 @@
+.search-container {
+  padding: 20px;
+  font-family: "Abel", sans-serif;
+  color: #28343b;
+}
+
+.search-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 90%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-mood-section h2,
+.trending-itineraries-section h2 {
+  font-family: "Bebas Neue", cursive;
+  color: #af0106;
+  margin-bottom: 15px;
+}
+
+.mood-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.mood-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #c74b31;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mood-button.active {
+  background-color: #af0106;
+}
+
+.mood-button:hover {
+  background-color: #af0106;
+}
+
+.trending-itineraries-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.itineraries-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.itinerary-item {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.itinerary-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.itinerary-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fffbeb;
+}
+
+.itinerary-info h3 {
+  font-family: "Bebas Neue", cursive;
+  margin: 0;
+}
+
+.itinerary-info p {
+  margin: 0;
+}

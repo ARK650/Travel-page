@@ -5,6 +5,11 @@ import Home from "./components/home";
 import Explore from "./components/Explore";
 import Search from "./components/Search";
 import Profile from "./components/Profile";
+import Login from "./components/Login";
+import HomeIcon from "./icons/home.jpg";
+import ExploreIcon from "./icons/Explore";
+import SearchIcon from "./icons/search.svg";
+import ProfileIcon from "./icons/profile.svg";
 
 function App() {
   return (
@@ -18,6 +23,7 @@ function App() {
             <Route path="/explore" element={<Explore />} />
             <Route path="/search" element={<Search />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
         </div>
         <nav
@@ -46,7 +52,7 @@ function App() {
               }}
             >
               <img
-                src="./icons/Home.tsx"
+                src={HomeIcon}
                 alt="Home"
                 style={{ width: "30px", height: "30px" }}
               />
@@ -64,7 +70,7 @@ function App() {
               }}
             >
               <img
-                src="./icons/explore.svg"
+                src={ExploreIcon}
                 alt="Explore"
                 style={{ width: "30px", height: "30px" }}
               />
@@ -82,7 +88,7 @@ function App() {
               }}
             >
               <img
-                src="./icons/search.svg"
+                src={SearchIcon}
                 alt="Search"
                 style={{ width: "30px", height: "30px" }}
               />
@@ -100,7 +106,7 @@ function App() {
               }}
             >
               <img
-                src="./icons/profile.svg"
+                src={ProfileIcon}
                 alt="My Account"
                 style={{ width: "30px", height: "30px" }}
               />
