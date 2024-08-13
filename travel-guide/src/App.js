@@ -39,7 +39,7 @@ function App() {
             boxShadow: "0px -2px 10px rgba(0, 0, 0, 0.1)",
             padding: "15px 0",
             borderRadius: "35px",
-            backgroundColor: "#FFFBEB", // Starlight color
+            backgroundColor: "#FFFBEB",
             zIndex: 1000,
           }}
         >
