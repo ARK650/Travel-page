@@ -62,7 +62,7 @@ function Explore() {
         const data = await response.json();
         setSearchResults(data.suggestions || []);
       } catch (error) {
-        console.error("Error fetching search results:", error);
+        console.error();
       }
     } else {
       setSearchResults([]);
@@ -217,6 +217,8 @@ function Explore() {
           right: "10px",
           zIndex: 1000,
           height: "180px",
+          borderRadius: "15px", // Optional: rounded corners for a softer look
+          backgroundColor: "rgba(0, 0, 0, 0.2)", // Slight dark background to enhance contrast
           boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.5)", // Shadow added
         }}
       >
